@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('html/loan.jpg');
+}
+table#t01 {
+  width: 150%;
+  background-color: #f1f1c1;
+}
+table, th, td {
+  border: 2px solid #39CCCC;
+}
+
+</style>
+
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body style="text-align:center;">
+<h1 style="color:white;" >Loan Installment Calculator</h1>
+<form method="post" action="/Loans/LoanCalculator">
+
+<center>
+<p>
+    <table style="background-color: #eee; width: 450;">
+      <tr background="blue"  >
+        <td align="left"><h3 style="color:#001f3f" >Loan Amount:</h3></td>
+        <td align="center"><input type="number" size="10" name="amount" step=".01" required></input></td>
+      </tr>
+      <tr>
+        <td align="left"><h3 style="color:#001f3f">Annual Interest Rate: </h3></td>
+        <td align="center"><input type="number" size="10" name="rate" min= "0.01" step=".01" required></input></td>
+      </tr>
+      <tr>
+        <td align="left"><h3 style="color:#001f3f">Number of Months:</h3></td>
+        <td align="center"><input type="number" size="10" name="period" required></input></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"  style="color:#39CCCC;" height="45"><input type="submit" name="cmdSubmit" value="Calculate"></td>
+      </tr>
+    </table>
+</center>
+</form>
+</body>
+</html>

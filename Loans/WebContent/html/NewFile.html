@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "ISO-8859-1">
+<script type="text/javascript" src="calc.js">
+
+</script>
+</head>
+
+<body>
+<p>Loan Amount: $<input id="amount" type="number" min="1" max="1000000" onchange="computeLoan()"></p>
+<p>Annual Interest Rate: <input id="interest_rate" type="number" min="0" max="1000000" value="10" step="0.1" onchange="computeLoan()"> %</p>
+<p>Number of Months: <input id="months" type="number" min="1" max="72" value="1" step="1" onchange="computeLoan()"></p>
+<h2 id="payment"> </h2>
+</body>
+
+</html>
